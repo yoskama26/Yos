@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Me contacter</title>
+  </head>
+  <body>
+    <header>
+      <h1>Peyret Robin</h1>
+    </header>
+    <div class="photoprofil">
+      <img class="photocv" src="profil.jpg" alt="Photos">
+    </div>
+    <nav>
+      <a href="page1.html"><h3><strong> Accueil</strong></h3></a>
+      <a href="page3.html"><h3><strong>Video de présentation</strong></h3></a>
+      <a href="contact.html"><h3><strong>Contact</strong></h3></a>
+      <a id="lien" href="page2.html"><h3><strong>Hobby</strong></h3></a>
+    </nav>
+    <section class="sectioncontact">
+      <h2>Me contacter</h2>
+      <form action="https://httpbin.org/post" method="post">
+        <div class="nomcontact">
+          <label for="id_name">Nom</label>
+          <input id="id_name" type="text" name="name" value="" required>
+        </div>
+        <div class="mailcontact">
+          <label for="id_mail">E-mail</label>
+          <input id="id_mail" type="email" name="mail" value="">
+        </div>
+        <div>
+          <label for="msg">Message</label>
+          <textarea id="msg" name="message"></textarea>
+        </div>
+        <p>Etes vous satisfait ?</p>
+      <select name="satisfait">
+        <option value="non">Non</option>
+        <option value="un peu">Un peu</option>
+        <option value="beaucoup">beaucoup</option>
+        <option value="boss">juste zi boss en fait</option>
+      </select>
+      <br>
+      <div class="choixgenre">
+        <input type="radio" name="genre" value="Homme" checked>Homme <br>
+        <input type="radio" name="genre" value="Femme">Femme
+      </div>
+        <div class="button">
+          <button type="submit">Envoyer le message</button>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <h3>
+        <a href="page1.html">retour</a>
+      </h3>
+    </footer>
+  </body>
+</html>
